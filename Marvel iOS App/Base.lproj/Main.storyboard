@@ -25,26 +25,19 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ZGn-Is-fSn">
                                                 <rect key="frame" x="9.5" y="0.0" width="395" height="351"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="kTd-Od-5F9">
-                                                        <rect key="frame" x="0.0" y="0.0" width="395" height="351"/>
-                                                        <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ydw-1l-OEO">
-                                                                <rect key="frame" x="0.5" y="0.0" width="394" height="300"/>
-                                                            </imageView>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ken Ellis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-VT-XwI">
-                                                                <rect key="frame" x="161.5" y="327" width="72.5" height="24"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ydw-1l-OEO">
+                                                        <rect key="frame" x="0.5" y="0.0" width="394" height="297"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ken Ellis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-VT-XwI">
+                                                        <rect key="frame" x="161.5" y="327" width="72.5" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="kTd-Od-5F9" secondAttribute="bottom" id="0zq-Bq-6wM"/>
-                                                    <constraint firstAttribute="trailing" secondItem="kTd-Od-5F9" secondAttribute="trailing" id="FBp-vJ-jMV"/>
-                                                    <constraint firstItem="kTd-Od-5F9" firstAttribute="leading" secondItem="ZGn-Is-fSn" secondAttribute="leading" id="agu-Wi-GMF"/>
-                                                    <constraint firstItem="kTd-Od-5F9" firstAttribute="top" secondItem="ZGn-Is-fSn" secondAttribute="top" id="foh-Gc-AGW"/>
+                                                    <constraint firstItem="CRx-VT-XwI" firstAttribute="top" secondItem="Ydw-1l-OEO" secondAttribute="bottom" constant="30" id="pej-JS-BRj"/>
+                                                    <constraint firstItem="Ydw-1l-OEO" firstAttribute="leading" secondItem="ZGn-Is-fSn" secondAttribute="leading" constant="0.5" id="qJj-pc-vxv"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
