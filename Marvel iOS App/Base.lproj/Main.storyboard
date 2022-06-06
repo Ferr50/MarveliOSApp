@@ -16,133 +16,95 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6zw-sv-RwL">
-                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYx-yG-sO7" userLabel="View1">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="381"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="ZGn-Is-fSn">
-                                                <rect key="frame" x="9.5" y="0.0" width="395" height="351"/>
-                                                <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ydw-1l-OEO">
-                                                        <rect key="frame" x="0.5" y="0.0" width="394" height="297"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ken Ellis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CRx-VT-XwI">
-                                                        <rect key="frame" x="161.5" y="327" width="72.5" height="24"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="CRx-VT-XwI" firstAttribute="top" secondItem="Ydw-1l-OEO" secondAttribute="bottom" constant="30" id="pej-JS-BRj"/>
-                                                    <constraint firstItem="Ydw-1l-OEO" firstAttribute="leading" secondItem="ZGn-Is-fSn" secondAttribute="leading" constant="0.5" id="qJj-pc-vxv"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="ZGn-Is-fSn" secondAttribute="bottom" constant="30" id="JEP-cH-d4A"/>
-                                            <constraint firstItem="ZGn-Is-fSn" firstAttribute="centerX" secondItem="SYx-yG-sO7" secondAttribute="centerX" id="b9K-CM-S48"/>
-                                            <constraint firstItem="ZGn-Is-fSn" firstAttribute="leading" secondItem="SYx-yG-sO7" secondAttribute="leading" constant="9.4852071005918788" id="fi2-hk-mOZ"/>
-                                            <constraint firstItem="ZGn-Is-fSn" firstAttribute="top" secondItem="SYx-yG-sO7" secondAttribute="top" id="rOv-ID-0gi"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2U-6a-Wb5" userLabel="View2">
-                                        <rect key="frame" x="0.0" y="389" width="414" height="171"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSJ-m7-FDI">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
-                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Bugle (1996) #3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-Pn-pUF">
-                                                <rect key="frame" x="121.5" y="27.5" width="174.5" height="21.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="The Daily Bugle has seen it all..until the day Betty Brant was taken hostage!" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AR7-Or-d9r">
-                                                <rect key="frame" x="42.5" y="85" width="341.5" height="33"/>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="ekH-Pn-pUF" firstAttribute="top" secondItem="VSJ-m7-FDI" secondAttribute="bottom" constant="7" id="02P-N5-GQE"/>
-                                            <constraint firstItem="VSJ-m7-FDI" firstAttribute="leading" secondItem="X2U-6a-Wb5" secondAttribute="leading" id="6wF-vB-kmC"/>
-                                            <constraint firstItem="VSJ-m7-FDI" firstAttribute="top" secondItem="X2U-6a-Wb5" secondAttribute="top" id="7tk-ZC-tbj"/>
-                                            <constraint firstAttribute="trailing" secondItem="VSJ-m7-FDI" secondAttribute="trailing" id="CYT-yd-xV4"/>
-                                            <constraint firstItem="ekH-Pn-pUF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X2U-6a-Wb5" secondAttribute="leading" symbolic="YES" id="GPn-mP-fec"/>
-                                            <constraint firstAttribute="bottom" secondItem="AR7-Or-d9r" secondAttribute="bottom" constant="53" id="O8C-j2-2NF"/>
-                                            <constraint firstItem="AR7-Or-d9r" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X2U-6a-Wb5" secondAttribute="leading" constant="20" symbolic="YES" id="ReM-zo-7O9"/>
-                                            <constraint firstAttribute="trailing" secondItem="ekH-Pn-pUF" secondAttribute="trailing" constant="118" id="UTC-uZ-eRZ"/>
-                                            <constraint firstItem="AR7-Or-d9r" firstAttribute="top" secondItem="VSJ-m7-FDI" secondAttribute="bottom" constant="64.5" id="W7X-Gx-lqD"/>
-                                            <constraint firstItem="ekH-Pn-pUF" firstAttribute="top" secondItem="VSJ-m7-FDI" secondAttribute="bottom" constant="7" id="oFz-E1-N5K"/>
-                                            <constraint firstAttribute="trailing" secondItem="AR7-Or-d9r" secondAttribute="trailing" constant="30" id="sgh-Oq-gcn"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJo-gx-fdM" userLabel="View3">
-                                        <rect key="frame" x="0.0" y="568" width="414" height="180"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ltk-Gc-2yZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
-                                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Spider-Man (1963) #409" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLY-ue-SEl">
-                                                <rect key="frame" x="70" y="28" width="275" height="21.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY1-1A-le4">
-                                                <rect key="frame" x="30" y="90.5" width="356" height="57.5"/>
-                                                <string key="text">THE RETURN OD KAINE continues! Kaine has eluded the great Game for now, but the Rhino won`t stop until Kaine joins up - whether he likes it or not! He`ll have to team up with Spidey to get out of this one in one piece!</string>
-                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="sY1-1A-le4" secondAttribute="trailing" constant="28" id="1YM-0V-omZ"/>
-                                            <constraint firstItem="sY1-1A-le4" firstAttribute="top" secondItem="BLY-ue-SEl" secondAttribute="bottom" constant="41" id="4tc-a0-mdB"/>
-                                            <constraint firstItem="Ltk-Gc-2yZ" firstAttribute="leading" secondItem="lJo-gx-fdM" secondAttribute="leading" id="B5K-aX-Y1R"/>
-                                            <constraint firstItem="sY1-1A-le4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lJo-gx-fdM" secondAttribute="leading" constant="20" symbolic="YES" id="CIQ-NU-bxx"/>
-                                            <constraint firstAttribute="trailing" secondItem="BLY-ue-SEl" secondAttribute="trailing" constant="69" id="Ies-PB-IYq"/>
-                                            <constraint firstAttribute="trailing" secondItem="Ltk-Gc-2yZ" secondAttribute="trailing" id="XbI-5T-lcL"/>
-                                            <constraint firstItem="BLY-ue-SEl" firstAttribute="top" secondItem="Ltk-Gc-2yZ" secondAttribute="bottom" constant="7.5" id="Zcu-6o-3Rj"/>
-                                            <constraint firstItem="sY1-1A-le4" firstAttribute="top" secondItem="BLY-ue-SEl" secondAttribute="bottom" constant="41" id="bbY-I1-u30"/>
-                                            <constraint firstItem="Ltk-Gc-2yZ" firstAttribute="top" secondItem="lJo-gx-fdM" secondAttribute="top" id="d2K-9b-wPz"/>
-                                            <constraint firstItem="BLY-ue-SEl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lJo-gx-fdM" secondAttribute="leading" symbolic="YES" id="uY9-5c-h6j"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="za5-fj-zIB">
+                                <rect key="frame" x="10" y="74" width="394" height="290"/>
                                 <constraints>
-                                    <constraint firstItem="lJo-gx-fdM" firstAttribute="top" secondItem="6zw-sv-RwL" secondAttribute="top" constant="568" id="bTs-ka-j53"/>
-                                    <constraint firstItem="X2U-6a-Wb5" firstAttribute="top" secondItem="6zw-sv-RwL" secondAttribute="top" constant="389" id="fYk-pS-pF8"/>
+                                    <constraint firstAttribute="height" constant="290" id="0Eh-ZB-pJD"/>
                                 </constraints>
-                            </stackView>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ken Ellis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fx-35-QWx">
+                                <rect key="frame" x="166" y="394" width="82" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgV-8s-Np5">
+                                <rect key="frame" x="0.0" y="452" width="414" height="23"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Bugle (1996) #3" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFS-WW-Xrt">
+                                <rect key="frame" x="115.5" y="490" width="183.5" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Daily Bugle has seen it all..until the day Betty Brant was taken hostage!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aD0-vb-IAX">
+                                <rect key="frame" x="30" y="533" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="njh-v3-oQy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmx-ab-RzU">
+                                <rect key="frame" x="0.0" y="663" width="414" height="23"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Spider-Man (1963) #409" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BU-0d-SIC">
+                                <rect key="frame" x="62" y="701" width="290" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjq-bO-UBI">
+                                <rect key="frame" x="30" y="744" width="354" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="OCy-eh-CFv"/>
+                                </constraints>
+                                <string key="text">THE RETURN OD KAINE continues! Kaine has eluded the great Game for now, but the Rhino won’t stop until Kaine joins up - whether he likes it or not! He’ll have to team up with Spidey to get out of this one in one piece!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6zw-sv-RwL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HmN-2k-wQs"/>
-                            <constraint firstItem="6zw-sv-RwL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="KMI-lc-ibY"/>
-                            <constraint firstItem="6zw-sv-RwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lE4-Yo-j42"/>
-                            <constraint firstItem="6zw-sv-RwL" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="qge-BV-h8V"/>
+                            <constraint firstItem="HgV-8s-Np5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="18U-Wr-2hK"/>
+                            <constraint firstItem="4fx-35-QWx" firstAttribute="top" secondItem="za5-fj-zIB" secondAttribute="bottom" constant="30" id="7d4-wC-aj1"/>
+                            <constraint firstItem="HgV-8s-Np5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9se-fP-TVu"/>
+                            <constraint firstItem="Yjq-bO-UBI" firstAttribute="top" secondItem="7BU-0d-SIC" secondAttribute="bottom" constant="20" id="AGz-5Y-fhM"/>
+                            <constraint firstItem="Yjq-bO-UBI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="B8g-Uo-Slr"/>
+                            <constraint firstItem="7BU-0d-SIC" firstAttribute="top" secondItem="lmx-ab-RzU" secondAttribute="bottom" constant="15" id="MGB-eU-POA"/>
+                            <constraint firstItem="za5-fj-zIB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OEm-ua-Vn8"/>
+                            <constraint firstItem="ZFS-WW-Xrt" firstAttribute="top" secondItem="HgV-8s-Np5" secondAttribute="bottom" constant="15" id="SJz-rS-3nv"/>
+                            <constraint firstItem="ZFS-WW-Xrt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TmY-5y-pLK"/>
+                            <constraint firstItem="HgV-8s-Np5" firstAttribute="top" secondItem="4fx-35-QWx" secondAttribute="bottom" constant="30" id="Us8-dA-Q3P"/>
+                            <constraint firstItem="lmx-ab-RzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WQi-92-D2m"/>
+                            <constraint firstItem="lmx-ab-RzU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZP2-oe-xwH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="za5-fj-zIB" secondAttribute="trailing" constant="10" id="caj-0J-Eyo"/>
+                            <constraint firstItem="Yjq-bO-UBI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="dbW-7f-62R"/>
+                            <constraint firstItem="4fx-35-QWx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hov-ZT-4eW"/>
+                            <constraint firstItem="lmx-ab-RzU" firstAttribute="top" secondItem="aD0-vb-IAX" secondAttribute="bottom" constant="30" id="it1-XE-B63"/>
+                            <constraint firstItem="za5-fj-zIB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kz4-JO-v3W"/>
+                            <constraint firstItem="aD0-vb-IAX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="llE-KD-LOl"/>
+                            <constraint firstItem="7BU-0d-SIC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="seD-HG-ib2"/>
+                            <constraint firstItem="za5-fj-zIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vN5-H4-mch"/>
+                            <constraint firstItem="aD0-vb-IAX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="viK-pe-z3b"/>
+                            <constraint firstItem="aD0-vb-IAX" firstAttribute="top" secondItem="ZFS-WW-Xrt" secondAttribute="bottom" constant="20" id="zPM-a5-OWh"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
+            <point key="canvasLocation" x="135.38461538461539" y="105.21327014218009"/>
         </scene>
     </scenes>
     <resources>
