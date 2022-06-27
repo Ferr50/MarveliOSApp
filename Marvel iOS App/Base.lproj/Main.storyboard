@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oXx-Ga-jXy">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <accessibilityOverrides dynamicTypePreference="2"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,66 +9,149 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Okd-CQ-f2K">
+            <objects>
+                <navigationController id="oXx-Ga-jXy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zhR-I4-KhM">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dps-vY-Biz" kind="relationship" relationship="rootViewController" id="wYX-Bf-uNM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j7k-Wg-nvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1611" y="104"/>
+        </scene>
+        <!--Initial Controller-->
+        <scene sceneID="8ez-Dy-Lnf">
+            <objects>
+                <viewController id="Dps-vY-Biz" customClass="InitialController" customModule="Marvel_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wt1-qg-iRC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W4a-wR-Jtc">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="heroCell" rowHeight="306" id="Rlt-xO-15o" customClass="CustomTableViewCell" customModule="Marvel_iOS_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="306"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rlt-xO-15o" id="FBU-3w-hNi">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="306"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RBp-7S-aMi" userLabel="HeroImage">
+                                                    <rect key="frame" x="10" y="10" width="370" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="ToJ-2s-2m9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q5S-Bl-2Ep" userLabel="HeroName">
+                                                    <rect key="frame" x="174" y="230" width="42" height="55"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="q5S-Bl-2Ep" secondAttribute="bottom" constant="10" id="87q-8c-frA"/>
+                                                <constraint firstItem="q5S-Bl-2Ep" firstAttribute="top" secondItem="RBp-7S-aMi" secondAttribute="bottom" constant="20" id="JYN-q9-mRJ"/>
+                                                <constraint firstItem="q5S-Bl-2Ep" firstAttribute="centerX" secondItem="FBU-3w-hNi" secondAttribute="centerX" id="LR4-Gs-FIk"/>
+                                                <constraint firstItem="RBp-7S-aMi" firstAttribute="leading" secondItem="FBU-3w-hNi" secondAttribute="leading" constant="10" id="bKo-MO-zmi"/>
+                                                <constraint firstAttribute="trailing" secondItem="RBp-7S-aMi" secondAttribute="trailing" constant="10" id="fce-Gj-cp9"/>
+                                                <constraint firstItem="RBp-7S-aMi" firstAttribute="top" secondItem="FBU-3w-hNi" secondAttribute="top" constant="10" id="gFL-HU-atm"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="heroImageView" destination="RBp-7S-aMi" id="d9e-im-wcp"/>
+                                            <outlet property="heroLabel" destination="q5S-Bl-2Ep" id="4Lm-bJ-7FC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ula-nd-3d2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W4a-wR-Jtc" firstAttribute="leading" secondItem="Ula-nd-3d2" secondAttribute="leading" id="7Pm-HN-9x1"/>
+                            <constraint firstItem="Ula-nd-3d2" firstAttribute="trailing" secondItem="W4a-wR-Jtc" secondAttribute="trailing" id="VSi-Vq-WtV"/>
+                            <constraint firstItem="W4a-wR-Jtc" firstAttribute="top" secondItem="Ula-nd-3d2" secondAttribute="top" id="rRJ-DU-iGX"/>
+                            <constraint firstItem="Ula-nd-3d2" firstAttribute="bottom" secondItem="W4a-wR-Jtc" secondAttribute="bottom" id="rlz-xQ-F5e"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sXs-F1-4Vt"/>
+                    <connections>
+                        <outlet property="initialTableView" destination="W4a-wR-Jtc" id="2w6-uf-W1f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uaS-XY-FT7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-629.23076923076917" y="103.7914691943128"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Marvel_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" customClass="ViewController" customModule="Marvel_iOS_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GVr-rz-Jid">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="766"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0D-hK-ab8">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="793.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="813.66666666666663"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-Ci-Psj">
-                                                <rect key="frame" x="10" y="30" width="394" height="270"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kenellis-head" translatesAutoresizingMaskIntoConstraints="NO" id="fUR-Ci-Psj">
+                                                <rect key="frame" x="10" y="30" width="370" height="270"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="270" id="m8E-D1-Eby"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ken Ellis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxM-OK-S1f">
-                                                <rect key="frame" x="0.0" y="330" width="414" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loren teste" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wxM-OK-S1f">
+                                                <rect key="frame" x="0.0" y="330" width="390" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbu-lG-ZDh">
-                                                <rect key="frame" x="0.0" y="381" width="414" height="21"/>
+                                                <rect key="frame" x="0.0" y="381" width="390" height="21"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Bugle (1996) #3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjo-hp-5CX">
-                                                <rect key="frame" x="0.0" y="410" width="414" height="21"/>
+                                                <rect key="frame" x="0.0" y="410" width="390" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Daily Bugle has seen it all..until the day Betty Brant was taken hostage!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbs-Px-PRW">
-                                                <rect key="frame" x="30" y="481" width="354" height="41"/>
+                                                <rect key="frame" x="30" y="481" width="330" height="40.666666666666629"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgN-0g-RXD">
-                                                <rect key="frame" x="0.0" y="572" width="414" height="21"/>
+                                                <rect key="frame" x="0.0" y="571.66666666666663" width="390" height="21"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazing Spider-Man (1963) #409" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Via-g5-Y3q">
-                                                <rect key="frame" x="0.0" y="601" width="414" height="21"/>
+                                                <rect key="frame" x="0.0" y="600.66666666666663" width="390" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-dT-cVo">
-                                                <rect key="frame" x="30" y="672" width="354" height="101.5"/>
+                                                <rect key="frame" x="30" y="671.66666666666663" width="330" height="122"/>
                                                 <string key="text">THE RETURN OD KAINE continues! Kaine has eluded the great Game for now, but the Rhino won’t stop until Kaine joins up - whether he likes it or not! He’ll have to team up with Spidey to get out of this one in one piece!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -132,6 +215,9 @@
                             <constraint firstItem="GVr-rz-Jid" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Olc-6L-zib"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleHero" destination="wxM-OK-S1f" id="bgh-Ru-NMn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +225,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="kenellis-head" width="221" height="220"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
